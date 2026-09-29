@@ -39,7 +39,7 @@ Note for Linux: You may need to install the system’s graphics dependencies (li
    ```bash
      streamlit run app.py
 
-## Usage
+## ⚙️ Usage
 
 Open the provided local link (usually http://localhost:8501), upload your .csv file containing the compounds, select the columns corresponding to SMILES and the activity metric, choose your fingerprint, and run the analysis.
 
