@@ -39,8 +39,8 @@ def get_fingerprint(mol, fp_type):
     }
     return fps[fp_type](mol)
 
-st.set_page_config(page_title="ALPlotter_web", layout="wide")
-st.title("DACSIF ALPlotter Web ")
+st.set_page_config(page_title="ALPlotter web", layout="wide")
+st.title("DACSIF ALPlotter Web")
 
 # --- Barra Lateral ---
 if st.sidebar.button("🔄 Reiniciar Aplicación"):
@@ -132,8 +132,8 @@ if uploaded_file:
             
             # Renderizar imágenes de alta resolución
             from rdkit.Chem import Draw
-            img_a = Draw.MolToImage(mol_a, size=(350, 350))
-            img_b = Draw.MolToImage(mol_b, size=(350, 350))
+            img_a = Draw.MolToImage(mol_a, size=(600, 600))
+            img_b = Draw.MolToImage(mol_b, size=(600, 600))
             
             # Mostrar en dos columnas
             col1, col2 = st.columns(2)
