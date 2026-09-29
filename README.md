@@ -27,7 +27,6 @@ If you want to run the application on your own machine or in a development envir
    git clone [https://github.com/user/alplotter-web.git](https://github.com/user/alplotter-web.git)
    cd alplotter-web
 
-   Install the necessary dependencies:
 Make sure you have an active Python virtual environment (3.8 or higher).
 
 2. **Install the dependencies**
