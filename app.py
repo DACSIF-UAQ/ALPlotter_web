@@ -130,20 +130,19 @@ if uploaded_file:
             mol_a = Chem.MolFromSmiles(smiles_a)
             mol_b = Chem.MolFromSmiles(smiles_b)
             
-            # Renderizar imágenes de alta resolución
-            from rdkit.Chem import Draw
-            img_a = Draw.MolToImage(mol_a, size=(600, 600))
-            img_b = Draw.MolToImage(mol_b, size=(600, 600))
+            # Renderizar imágenes de alta resolución utilizando la función base64
+            img_a = mol_to_base64(mol_a, size=(350, 350))
+            img_b = mol_to_base64(mol_b, size=(350, 350))
             
             # Mostrar en dos columnas
             col1, col2 = st.columns(2)
             with col1:
-                st.image(img_a, use_column_width=True)
+                st.image(img_a, use_container_width=True)
                 st.markdown(f"**ID:** {id_a}")
                 st.markdown(f"**Actividad:** {act_a:.2f}")
                 st.caption(f"SMILES: {smiles_a}")
             with col2:
-                st.image(img_b, use_column_width=True)
+                st.image(img_b, use_container_width=True)
                 st.markdown(f"**ID:** {id_b}")
                 st.markdown(f"**Actividad:** {act_b:.2f}")
                 st.caption(f"SMILES: {smiles_b}")
