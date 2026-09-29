@@ -39,17 +39,17 @@ Note for Linux: You may need to install the system’s graphics dependencies (li
    ```bash
      streamlit run app.py
 
-**Usage**
+## Usage
 
 Open the provided local link (usually http://localhost:8501), upload your .csv file containing the compounds, select the columns corresponding to SMILES and the activity metric, choose your fingerprint, and run the analysis.
 
 🛠️ Technologies Used
 
-Python 3
-Streamlit (Web user interface)
-RDKit (Chemoinformatics engine and 2D rendering)
-Plotly (Interactive data visualization)
-Scikit-learn (t-SNE algorithm)
-Pandas & NumPy (Tabular data and matrix manipulation)
+* Python 3
+* Streamlit (Web user interface)
+* RDKit (Chemoinformatics engine and 2D rendering)
+* Plotly (Interactive data visualization)
+* Scikit-learn (t-SNE algorithm)
+* Pandas & NumPy (Tabular data and matrix manipulation)
 
 Code created with the assistance of Google Gemini Pro 3.1, and is based on the original R script from DIFACQUIM-UNAM. Thanks to Dr. José Luis Medina-Franco for his recommendations.
